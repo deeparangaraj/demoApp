@@ -2242,3 +2242,5 @@ org.springframework.dao.EmptyResultDataAccessException: Incorrect result size: e
 2018-06-12 17:26:57.455  INFO 8348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8090 (http)
 2018-06-12 17:26:57.467  INFO 8348 --- [main] com.task.station.StationApplication      : Started StationApplication in 20.005 seconds (JVM running for 21.237)
 2018-06-12 17:27:16.241  INFO 8348 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-12 17:27:16.267  INFO 8348 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-12 17:27:16.340  INFO 8348 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 54 ms
