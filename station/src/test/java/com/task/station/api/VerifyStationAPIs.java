@@ -52,7 +52,7 @@ public class VerifyStationAPIs
 		station.put("callSign","start");
 		station.put("hdEnabled",true);
 		
-		String stationID = given().
+		String stationName = given().
 			contentType("application/json").
 			body(station.toString()).
 		when().
@@ -61,13 +61,13 @@ public class VerifyStationAPIs
 			assertThat().
 			statusCode(200).
 		extract().
-			path("stationId");
+			path("stationName");
 		
 		given().
 			contentType("application/json").
 			body(station.toString()).
 		when().
-			get("http://localhost:8090/api/station/find?name=\"" + stationID + "\"").
+			get("http://localhost:8090/api/station/find?name=\"" + stationName + "\"").
 		then().
 			assertThat().
 			statusCode(200);
